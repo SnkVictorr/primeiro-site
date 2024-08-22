@@ -1,0 +1,223 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+
+/* Importar de googles fontes */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* BootStrap  */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../Imagens/banner\ 5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.site {
+    /* relative se posiciona de acordo com a tela do usuario */
+    position: relative;
+    /* Tamanho que cabe na maioria das telas */
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    /* fonte importada */
+    font-family: "Lato", sans-serif;
+    
+}
+
+.topo {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.logo {
+    position: relative;
+    margin: auto;
+    height: 150px;
+    /* colocar o mesmo width que está no inspecionar*/
+    width: 285.7px;
+}
+
+.menu {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.menu ul {
+    background-color: #2e231d;
+    display: flex;
+    justify-content: center;
+    /* OCULTA ÍCONE DE MARCADOR DAS LISTAS */
+    list-style: none;
+    /* RETIRAR O ESPAÇAMENTO DOS MARCADORES DAS LISTAS */
+    padding-left: 0;
+    margin: 0;
+    
+}
+
+.menu ul li a {
+    
+    float: left;
+    /* Vertical/horizontal */
+    padding: 15px 30px;
+    
+    /* Herda a cor dos elementos pais */
+    /* color: inherit; */
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/* HOVER: Efeito de passar o mouse sobre o elemento */
+.menu ul li a:hover {
+    background-color: #d1bcb127;
+    color: white;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 562.48px;
+    background: url(../Imagens/banner\ 4.avif) center;
+    background-size: cover;
+    /* Transforma o elemento para flexível */
+    display: flex;
+    /* Centraliza o conteúdo horizontalmente */
+    justify-content: end;
+    /* Centraliza o conteúdo verticalmente */
+    align-items: center;
+    /* Alinha os itens na vertical e muda o comportamento dos alinhamentos */
+    flex-direction: column;
+
+}
+
+.banner h1, .banner p {
+    margin: 0;
+    color: white;
+}
+
+.fundo-banner {
+    background-color: rgba(28, 73, 139, 0.664);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.conteudo {
+    position: relative;
+    width: 100%;
+    height: 575px;
+    /* Duas medidas no margin: Eixo Vertical e Eixo Horizontal */
+    margin: 50px 0;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 575px;
+    /* Flutua para o lado definido */
+    float: left;
+    margin-right: 50px;
+    /* border e padding afetam o width e o height. Podemos usar border-box para que isso seja adaptado corretamente */
+    /* border: 1px gray solid; */
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px #0d74a1cc;
+    background-color: white;
+}
+
+.box:hover {
+    box-shadow: #043042cc;
+    transition: 0.1s;
+    /*  da zoom na imagem */
+    transform: scale(1.1);
+    
+    cursor: pointer;
+
+}
+
+/* muda a margem da ultima div */
+.box:last-child {
+    margin-right: 0;
+}
+
+/* pega as img da classe .box */
+.box img {
+    width: 100%;
+    height: auto;
+    /* border-radius: 10px 10px 0 0; */
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.box h2, .box p {
+    padding: 10px;  
+    margin: 0;
+}
+
+.box h2 {
+    text-align: center;
+    font-family: "Quattrocento", serif;
+}
+
+.rodape {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: #2e231d;
+}
+
+.rodape-coluna {
+    position: relative;
+    width: 33.33%;
+    /* auto pois a altura ja está definida na classe .rodape */
+    height: auto;
+    float: left;
+    
+}
+
+.rodape-coluna ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.rodape-coluna ul li a {
+    text-decoration: none;
+}
+
+.lista-rodape li{
+    margin-bottom: 10px;
+}
+
+.lista-rodape li a{
+    margin-bottom: 10px;
+    color: white;
+}
+
+.icones-rodape li {
+    float: left;
+    font-size: 25px;
+    margin-right: 15px;
+
+}
+
+.icones-rodape li a{
+    padding: 5px 10px;
+    background-color: white;
+    color: #2e231d !important;
+}
+
+.icones-rodape li a:hover{
+    border-radius: 10px;
+    transition: 0.5s;
+}
