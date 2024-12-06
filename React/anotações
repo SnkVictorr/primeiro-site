@@ -1,0 +1,8 @@
+Comandos Usados:
+
+npx create-next-app@latest
+cd my-app-shop
+
+// Dentro da pasta do projeto
+npx next dev    
+
